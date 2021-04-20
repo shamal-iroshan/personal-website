@@ -1,11 +1,14 @@
 import React from 'react';
 
+//import custom components
+import './style.css';
+
 function Home() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-6 col-sm-12 col-md-6 col-lg-6 col-lg-6">
-                    <div className="">
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div className="d-flex justify-content-center align-items-center">
                         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="100" cy="100" fill="#939CE2" r="80" />
                             <g>
@@ -30,8 +33,8 @@ function Home() {
                         </svg>
                     </div>
                 </div>
-                <div className="col-6 col-sm-12 col-md-6 col-lg-6 col-lg-6">
-                    <div className="d-flex justify-content-center align-items-center" style={{height: '85vh'}}>
+                <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0">
+                    <div className="d-flex justify-content-center align-items-center m-auto">
                         <div className="home-content-area">
                             <h3>HEY THERE !</h3>
                             <h1>I AM SHAMAL</h1>
