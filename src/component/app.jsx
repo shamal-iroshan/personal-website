@@ -1,17 +1,18 @@
 import React from 'react';
 
+import Header from "./common/header";
+
 function App( props ) {
     return (
         <>
             <div>
-                <h1>Header</h1>
+                <Header/>
 
                 {
                     props.children
                 }
 
-                <h1>Footer</h1>
-
+                {/*<Footer/>*/}
             </div>
         </>
     );
