@@ -26,13 +26,13 @@ function Header() {
                 <nav>
                     <div id="main-menu" className="d-flex justify-content-center mt-2">
                         <div className="m-3 mr-10">
-                            <img src={`${process.env.PUBLIC_URL}/assets/img/home/logowithicon.png`} alt="logo"/>
+                            <Link to={`${process.env.PUBLIC_URL}`}><img src={`${process.env.PUBLIC_URL}/assets/img/home/logowithicon.png`} alt="logo"/></Link>
                         </div>
 
                         <div>
                             <ul className="d-flex nav header-navigation">
                                 <Link to="#"><li className="m-3">ABOUT</li></Link>
-                                <Link to="#"><li className="m-3">PORTFOLIO</li></Link>
+                                <Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
                                 <Link to="#"><li className="m-3">BLOG</li></Link>
                                 <Link to="#"><li className="m-3">CONTACT</li></Link>
                             </ul>
@@ -40,12 +40,13 @@ function Header() {
                     </div>
                     <div id="mobile-nav">
                         <div id="mySidepanel" className="sidepanel">
-                            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
-                            <a href="index.html">Home</a>
-                            <a href="about.html">ABOUT</a>
-                            <a href="portfolio.html">PORTFOLIO</a>
-                            <a href="https://blog.shamaliroshan.com/">BLOG</a>
-                            <a href="contact.php">CONTACT</a>
+                            {/*<a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>*/}
+                            <li className="closebtn" onClick={closeNav}>&times;</li>
+                            <Link to="#"><li className="m-3">Home</li></Link>
+                            <Link to="#"><li className="m-3">ABOUT</li></Link>
+                            <Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
+                            <Link to="#"><li className="m-3">BLOG</li></Link>
+                            <Link to="#"><li className="m-3">CONTACT</li></Link>
                         </div>
 
                         <button className="openbtn" onClick={openNav}>&#9776; Menu</button>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from "./common/header/header";
+import Footer from "./common/footer/footer";
 
 function App( props ) {
     return (
@@ -12,7 +13,11 @@ function App( props ) {
                     props.children
                 }
 
-                {/*<Footer/>*/}
+                {
+                    window.location.pathname !== "/" ?
+                        <Footer/>
+                        : ''
+                }
             </div>
         </>
     );
