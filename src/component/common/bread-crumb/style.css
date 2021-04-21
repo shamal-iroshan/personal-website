@@ -1,0 +1,25 @@
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: #777;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    color: #999999;
+    padding-right: .7rem;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-top: -.1rem;
+    display: inline-block;
+}
+.breadcrumb a:hover {
+    color: #3366cc;
+}

@@ -1,0 +1,43 @@
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.port{
+    position: relative;
+}
+
+.port .overlay{
+    transition: all .4s ease 0s;
+}
+
+.port:hover .overlay{
+    top: 20px;
+    left: 20px;
+    background: rgba(19,69,230,.9);
+}
+
+.port .short-desc{
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.port:hover .short-desc{
+    bottom: 24px;
+    left: 60px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 6;
+}
