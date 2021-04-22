@@ -42,8 +42,9 @@ export default function Portfolio() {
 
     return (
         <>
-            <BreadCrumb path={['Portfolio']}/>
+            <div className="mb-3"/>
             <PageHeader title="Portfolio"/>
+            <BreadCrumb path={['Portfolio']}/>
 
             <div className="container mt-5">
                 <div className="row">
@@ -54,7 +55,7 @@ export default function Portfolio() {
                     }
                 </div>
             </div>
-            <div className="mb-5"></div>
+            <div className="mb-5"/>
         </>
     )
 }

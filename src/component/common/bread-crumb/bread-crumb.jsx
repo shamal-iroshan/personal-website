@@ -8,7 +8,6 @@ function BreadCrumb(props) {
 
     return (
         <>
-            <hr className="m-0"/>
             <div>
                 <div className="container">
                     <ol className="breadcrumb">
@@ -21,6 +20,7 @@ function BreadCrumb(props) {
                     </ol>
                 </div>
             </div>
+            <hr className="m-0"/>
         </>
     );
 }
