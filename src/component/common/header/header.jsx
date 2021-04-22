@@ -33,7 +33,7 @@ function Header() {
                             <ul className="d-flex nav header-navigation">
                                 <Link to={`${process.env.PUBLIC_URL}/pages/about`}><li className="m-3">ABOUT</li></Link>
                                 <Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
-                                <Link to="#"><li className="m-3">CONTACT</li></Link>
+                                <Link to={`${process.env.PUBLIC_URL}/pages/contact`}><li className="m-3">CONTACT</li></Link>
                                 <Link to="#"><li className="m-3">BLOG</li></Link>
                             </ul>
                         </div>
@@ -45,7 +45,7 @@ function Header() {
                             <Link to={`${process.env.PUBLIC_URL}`}><li className="m-3">Home</li></Link>
                             <Link to={`${process.env.PUBLIC_URL}/pages/about`}><li className="m-3">ABOUT</li></Link>
                             <Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
-                            <Link to="#"><li className="m-3">CONTACT</li></Link>
+                            <Link to={`${process.env.PUBLIC_URL}/pages/contact`}><li className="m-3">CONTACT</li></Link>
                             <Link to="#"><li className="m-3">BLOG</li></Link>
                         </div>
 

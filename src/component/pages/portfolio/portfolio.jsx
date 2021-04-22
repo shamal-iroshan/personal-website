@@ -45,6 +45,7 @@ export default function Portfolio() {
             <div className="mb-3"/>
             <PageHeader title="Portfolio"/>
             <BreadCrumb path={['Portfolio']}/>
+            <hr className="m-0"/>
 
             <div className="container mt-5">
                 <div className="row">

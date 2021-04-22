@@ -12,6 +12,7 @@ function About() {
             <div className="mb-3"/>
             <PageHeader title="About Me"/>
             <BreadCrumb path={['About']}/>
+            <hr className="m-0"/>
 
             <div className="container">
                 <div className="row">
