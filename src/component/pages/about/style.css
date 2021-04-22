@@ -1,0 +1,160 @@
+/*about*/
+.about-text-header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 27px;
+    font-family: roboto,sans-serif;
+    color: #797979;
+}
+
+.about-text-sub-header{
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+    text-transform: capitalize;
+    font-family: roboto,sans-serif;
+    color: #05364d;
+}
+
+.about-sub-content{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    font-family: roboto,sans-serif;
+    color: #797979;
+}
+
+.about-downloadcv{
+    margin-top: 40px;
+    display: inline-block;
+    background: linear-gradient(to right,#1345e6 0%,#ed239f 51%,#1345e6 100%);
+    color: #fff !important;
+    letter-spacing: 0;
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 38px;
+    outline: none!important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-size: 200% auto;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.about-downloadcv:hover{
+    background-position: right center;
+    color: #fff;
+}
+/*------------------------------------------------*/
+
+.blob {
+    position: absolute;
+}
+/**/
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.top {
+    animation: rotate 15s infinite linear;
+}
+
+.middle {
+    animation: rotate 18s infinite reverse linear;
+}
+
+.bottom {
+    animation: rotate 20s infinite linear;
+}
+
+.blobs {
+    transition: transform 5s;
+}
+
+.blobs:hover {
+    transform: translate(100px, 100px) scale(0.0);
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(100px, 100px) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px, 100px) rotate(359deg);
+    }
+}
+
+/*responsive*/
+@media all and (max-width: 320px){
+    .home-content-area > h1 {
+        font-size: 40px;
+    }
+    .home-content-area > h5 {
+        font-size: 19px;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 375px){
+
+    .home-content-area > h1 {
+        font-size: 40px;
+    }
+    .home-content-area > h5 {
+        font-size: 19px;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 425px) {
+
+    .home-content-area > h1 {
+        font-size: 40px;
+    }
+    .home-content-area > h5 {
+        font-size: 19px;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 599px){
+
+}
+
+@media all and (min-width: 769px) and (max-width: 900px){
+
+}
+
+@media all and (min-width: 600px) and (max-width: 768px){
+
+}
+
+@media all and (min-width: 769px) and (max-width: 900px){
+
+}
+
+@media all and (min-width: 901px) and (max-width: 1199px) {
+}
+
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+
+}
+
+@media all and (min-width: 2560px){
+
+}
+
+@media print {
+
+}
+/**/

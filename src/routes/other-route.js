@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Layout from "../component/app";
-import About from "../component/about";
+import About from "../component/pages/about/about";
 import Portfolio from "../component/pages/portfolio/portfolio";
 
 export default function HomeRoute() {
