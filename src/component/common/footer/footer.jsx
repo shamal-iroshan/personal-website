@@ -6,54 +6,36 @@ import './style.css';
 function Footer() {
     return (
         <>
-            <div id="foot">
-                <div>
-                    <div id="footer-logo">
-                        {/*<img src="img/home/logowithicon_white.png" alt="logo"/>*/}
-                    </div>
-                    <div id="footer-navigation">
-                        <div id="footer-nav">
-                            <ul>
-                                <Link to="about.html">
-                                    <li>about</li>
-                                </Link>
-                                <Link to="portfolio.html">
-                                    <li>portfolio</li>
-                                </Link>
-                                <Link to="https://blog.shamaliroshan.com/">
-                                    <li>blog</li>
-                                </Link>
-                                <Link to="contact.php">
-                                    <li>contact</li>
-                                </Link>
-                            </ul>
-                        </div>
-                        <div id="footer-social">
-                            <a href="https://www.linkedin.com/in/shamal-iroshan-023485156/">
-                                <i className="fab fa-linkedin-in"/>
-                            </a>
-                            <a href="https://www.instagram.com/shamal_iroshan/">
-                                <i className="fab fa-instagram"/>
-                            </a>
-                            <a href="https://github.com/shamal34">
-                                <i className="fab fa-github"/>
-                            </a>
-                            <a href="https://stackoverflow.com/users/12289913/shamal-iroshan">
-                                <i className="fab fa-stack-overflow"/>
-                            </a>
-                        </div>
-                        <div id="copyright">
-                            <div>
-                                <p id="copyright-text">
-                                    Copyright &copy;
-                                    <script>
-                                        document.write(new Date().getFullYear());
-                                    </script>
-                                    All rights reserved | This website is made with <i className="far fa-heart"></i> by
-                                    Shamal
-                                </p>
-                            </div>
-                        </div>
+            <div className="footer-wave-container">
+                <svg viewBox="0 0 120 28">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+                            <feColorMatrix in="blur" mode="matrix" values="
+                   1 0 0 0 0
+                   0 1 0 0 0
+                   0 0 1 0 0
+                   0 0 0 13 -9" result="goo"/>
+                            <xfeBlend in="SourceGraphic" in2="goo"/>
+                        </filter>
+                        <path id="wave"
+                              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"/>
+                    </defs>
+
+                    <use id="wave3" className="wave" xlinkHref="#wave" x="0" y="-2"/>
+                    <use id="wave2" className="wave2" xlinkHref="#wave" x="0" y="0"/>
+                </svg>
+            </div>
+            <div style={{position: "absolute"}}>
+                <div className="row">
+                    <div className="col-12 text-white">
+                        <p>
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This website is made with <i className="far fa-heart"></i> by Shamal
+                        </p>
                     </div>
                 </div>
             </div>
