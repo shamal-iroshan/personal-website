@@ -16,3 +16,15 @@ export async function getWorks() {
             console.log(error);
         });
 }
+
+//send message
+export async function sendMessage(data) {
+    return axios.post(`${baseUrl}contact/saveContact`,data)
+        .then(function (response) {
+            return response.data;
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        });
+}
