@@ -11,7 +11,8 @@ function Work(props) {
                     style={{height: 250}} alt=""/>
                 <div className="overlay"/>
                 <div className="short-desc">
-                    <h4>{data.description}</h4>
+                    <h4>{data.title}</h4>
+                    <p>{data.description}</p>
                 </div>
             </div>
         </>

@@ -26,16 +26,34 @@ function Footer() {
                     <use id="wave2" className="wave2" xlinkHref="#wave" x="0" y="0"/>
                 </svg>
             </div>
-            <div style={{position: "absolute"}}>
-                <div className="row">
-                    <div className="col-12 text-white">
-                        <p>
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This website is made with <i className="far fa-heart"></i> by Shamal
-                        </p>
+            <div style={{position: "absolute", width: '100%', backgroundColor: '#694FC9'}}>
+                <div className="container">
+                    <hr style={{borderTop: '1px solid #fff'}}/>
+                    <div className="row">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+                            <div className="copyright">
+                                <div>
+                                    <p className="copyright-text">
+                                        Copyright &copy;
+                                        {
+                                            new Date().getFullYear()
+                                        }
+                                        All rights reserved | This website is made with <i className="far fa-heart"/> by
+                                        Shamal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div className="footer-nav">
+                                <ul>
+                                    <li><Link to={`${process.env.PUBLIC_URL}/pages/about`}>about</Link></li>
+                                    <li><Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}>portfolio</Link></li>
+                                    <li><Link to={`${process.env.PUBLIC_URL}/pages/contact`}>contact</Link></li>
+                                    <li><a href="https://blog.shamaliroshan.com/">blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

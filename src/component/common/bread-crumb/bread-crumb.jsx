@@ -20,6 +20,7 @@ function BreadCrumb(props) {
                     </ol>
                 </div>
             </div>
+            <hr className="m-0"/>
         </>
     );
 }

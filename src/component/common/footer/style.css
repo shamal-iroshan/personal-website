@@ -25,18 +25,39 @@ svg {
     to {transform: translateX(-100%);}
 }
 
-#copyright-text{
+.copyright-text{
     font-size: 14px;
     line-height: 27px;
     font-weight: 300;
     font-family: roboto,sans-serif;
-    color: #242424;
+    color: #e2e2e2;
 }
 
-#copyright-text > .far{
+.copyright-text > .far{
     transition: 0.3s;
 }
-#copyright-text:hover > .far{
+.copyright-text:hover > .far{
     color: rgba(255, 0, 0, 0.85);
     transition: 0.3s;
+}
+.footer-nav > ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-nav > ul > li{
+    line-height: 27px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: roboto,sans-serif;
+    color: #e2e2e2;
+    margin: 0 20px 0 20px;
+}
+.footer-nav > ul > li:hover{
+    color: #999999;
 }

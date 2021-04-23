@@ -4,19 +4,21 @@ import {Link} from "react-router-dom";
 //import custom components
 import './style.css';
 import BreadCrumb from "../../common/bread-crumb/bread-crumb";
+import PageHeader from "../../common/page-header/page-header";
 
 function Contact() {
     return (
         <>
 
             <div className="mb-3"/>
+            <PageHeader title="Contact Me"/>
             <BreadCrumb path={['About']}/>
 
-            <div className="container">
-                <div className="page-header page-header-big text-center" style={ { backgroundImage: `url('${process.env.PUBLIC_URL}/assets/img/banner.webp')` } }>
-                    <h1 className="page-title text-white">Contact me</h1>
-                </div>
-            </div>
+            {/*<div className="container">*/}
+            {/*    <div className="page-header page-header-big text-center" style={ { backgroundImage: `url('${process.env.PUBLIC_URL}/assets/img/banner.webp')` } }>*/}
+            {/*        <h1 className="page-title text-white">Contact me</h1>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
             <div className="page-content pb-0 mt-5">
                 <div className="container">
