@@ -4,6 +4,7 @@ import React from 'react';
 import './style.css';
 import PageHeader from "../../common/page-header/page-header";
 import BreadCrumb from "../../common/bread-crumb/bread-crumb";
+import MainFilteredIcon from "../../Icons/MainFilteredIcon";
 
 function About() {
     return (
@@ -47,6 +48,7 @@ function About() {
                                             className="middle"
                                         />
                                     </svg>
+                                    <MainFilteredIcon/>
                                 </g>
                             </svg>
                         </div>

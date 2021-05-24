@@ -21,6 +21,7 @@ function Contact() {
 
         sendMessage({
             name: name,
+            dateTime: new Date().toLocaleString(),
             email: email,
             phone: phone,
             subject: subject,

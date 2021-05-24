@@ -1,6 +1,7 @@
 import React from 'react';
 
 //import custom components
+import MainIcon from "../Icons/MainIcon";
 import './style.css';
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
                                         className="bottom"
                                     />
                                 </svg>
+                                <MainIcon/>
                             </g>
                         </svg>
                     </div>
