@@ -16,10 +16,23 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add --force"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +51,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0"
   }
 }
