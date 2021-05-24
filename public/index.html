@@ -16,10 +16,22 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap/bootstrap.min.css">
     <LINK rel="stylesheet" href="%PUBLIC_URL%/assets/vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/loader.css">
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
+
+<div id="loader" class="loaded">
+    <div class="loader-container">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"
+                        stroke-miterlimit="10"/>
+            </svg>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

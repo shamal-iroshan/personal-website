@@ -5,10 +5,10 @@
 }
 
 .loader:before {
-     content: '';
-     display: block;
-     padding-top: 100%;
- }
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
 
 .circular {
     animation: rotate 2s linear infinite;
@@ -68,11 +68,11 @@
     }
 }
 
-   body {
-       background-color: #eee;
-   }
-.showbox {
-
+body {
+    background-color: #eee;
+}
+.loaded {
+    display: none;
 }
 
 .loader-container {

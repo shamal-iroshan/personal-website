@@ -37,7 +37,7 @@ function Home() {
                 </div>
                 <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0">
                     <div className="d-flex justify-content-center align-items-center m-auto">
-                        <div className="home-content-area">
+                        <div className="home-content-area text-center text-sm-center text-md-center text-lg-left text-xl-left">
                             <h3>HEY THERE !</h3>
                             <h1>I AM SHAMAL</h1>
                             <h5>SOFTWARE DEVELOPER</h5>

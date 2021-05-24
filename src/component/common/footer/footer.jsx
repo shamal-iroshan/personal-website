@@ -47,6 +47,7 @@ function Footer() {
                         <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <div className="footer-nav">
                                 <ul>
+                                    <li><Link to={`${process.env.PUBLIC_URL}/`}>home</Link></li>
                                     <li><Link to={`${process.env.PUBLIC_URL}/pages/about`}>about</Link></li>
                                     <li><Link to={`${process.env.PUBLIC_URL}/pages/portfolio`}>portfolio</Link></li>
                                     <li><Link to={`${process.env.PUBLIC_URL}/pages/contact`}>contact</Link></li>

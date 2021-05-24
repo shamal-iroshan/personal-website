@@ -16,23 +16,27 @@ function About() {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0">
+                    <div
+                        className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0">
                         {/*<div className="row">*/}
-                            <div className="col-10 d-flex justify-content-center align-items-center">
-                                <div className="m-auto">
-                                    <div className="home-content-area">
-                                        <p className="about-text-header">ABOUT ME</p>
-                                        <h2 className="about-text-sub-header">front end and back end developer</h2>
-                                        <p className="about-text-content">I am shamal iroshan, i live in Colombo Sri Lanka. I’m undergraduate student of IJSE. I’m here to
-                                            help you with your any kind of IT related problem. If you need to contact me or find more details
-                                            about me, links are below for that.
-                                        </p>
-                                        <a href="#" className="about-downloadcv">
-                                            <span>DOWNLOAD CV</span>
-                                        </a>
-                                    </div>
+                        <div className="col-10 d-flex justify-content-center align-items-center">
+                            <div className="m-auto">
+                                <div className="home-content-area">
+                                    <p className="about-text-header">ABOUT ME</p>
+                                    <h2 className="about-text-sub-header">front end and back end developer</h2>
+                                    <p className="about-text-content">I am shamal iroshan, i live in Colombo Sri Lanka.
+                                        I’m undergraduate student of IJSE and I'm currently working as a Software
+                                        Engineer at Fcode Labs PVT LTD . I’m here to
+                                        help you with your any kind of IT related problem. If you need to contact me or
+                                        find more details
+                                        about me, links are below for that.
+                                    </p>
+                                    <a href={`${process.env.PUBLIC_URL}/assets/documents/shamal-iroshan.pdf`} className="about-downloadcv">
+                                        <span>DOWNLOAD CV</span>
+                                    </a>
                                 </div>
                             </div>
+                        </div>
                         {/*</div>*/}
                     </div>
 
