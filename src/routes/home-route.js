@@ -8,7 +8,7 @@ export default function HomeRoute() {
     return (
         <Switch>
             <Layout>
-                <Route exact path={ `${process.env.PUBLIC_URL}/` } component={ Home } />
+                <Route exact path={ `/` } component={ Home } />
             </Layout>
         </Switch>
     );
