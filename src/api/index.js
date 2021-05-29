@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const localServer = true;
 const WEB_SERVER = '';
-const LOCAL_SERVER = 'http://localhost:8000/api/v1/';
+const LOCAL_SERVER = 'http://localhost:8080/api/v1/';
 const baseUrl = localServer ? LOCAL_SERVER : WEB_SERVER;
 
 //get all works

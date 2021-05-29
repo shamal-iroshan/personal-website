@@ -27,7 +27,7 @@ export default function Portfolio() {
             <div className="container mt-5">
                 <div className="row">
                     {
-                        works ?
+                        works && works.length > 0?
                             works.map((item, index) => (
                                 <Work data={item} key={index}/>
                             ))

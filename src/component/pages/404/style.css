@@ -1,8 +1,9 @@
 .mainbox {
-    background-color: #3498db;
+    background: rgb(34,89,226);
+    background: linear-gradient(90deg, rgba(34,89,226,1) 0%, rgba(164,76,199,1) 89%, rgba(164,76,199,1) 100%);
     margin: auto;
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     position: relative;
 }
 
@@ -10,16 +11,10 @@
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 11rem;
-    position:absolute;
-    left: 20%;
-    top: 8%;
 }
 
 .error-far {
-    position: absolute;
     font-size: 8.5rem;
-    left: 42%;
-    top: 15%;
     color: #ffffff;
 }
 
@@ -27,9 +22,6 @@
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 11rem;
-    position:absolute;
-    left: 68%;
-    top: 8%;
 }
 
 .msg {
@@ -37,9 +29,11 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.6rem;
     position:absolute;
-    left: 16%;
-    top: 45%;
-    width: 75%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 50%;
 }
 
 .link a {
@@ -49,4 +43,16 @@
 
 .link a:hover {
     text-decoration: underline;
+}
+
+.number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 700px) {
+    .msg {
+        width: 80%;
+    }
 }
