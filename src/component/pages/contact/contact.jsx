@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import {Helmet} from "react-helmet";
 
 //import custom components
 import './style.css';
@@ -58,6 +59,9 @@ function Contact() {
 
     return (
         <>
+            <Helmet>
+                <title>Contact Me | Shamal iroshan</title>
+            </Helmet>
 
             <div className="mb-3"/>
             <PageHeader title="Contact Me"/>

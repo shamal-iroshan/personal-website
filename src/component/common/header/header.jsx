@@ -42,11 +42,11 @@ function Header() {
                         <div id="mySidepanel" className="sidepanel">
                             {/*<a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>*/}
                             <li className="closebtn" onClick={closeNav}>&times;</li>
-                            <Link to={`/`}><li className="m-3">Home</li></Link>
-                            <Link to={`/pages/about`}><li className="m-3">ABOUT</li></Link>
-                            <Link to={`/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
-                            <Link to={`/pages/contact`}><li className="m-3">CONTACT</li></Link>
-                            <Link to="#"><li className="m-3">BLOG</li></Link>
+                            <Link to={`/`}><li onClick={closeNav} className="m-3">Home</li></Link>
+                            <Link to={`/pages/about`}><li onClick={closeNav} className="m-3">ABOUT</li></Link>
+                            <Link to={`/pages/portfolio`}><li onClick={closeNav} className="m-3">PORTFOLIO</li></Link>
+                            <Link to={`/pages/contact`}><li onClick={closeNav} className="m-3">CONTACT</li></Link>
+                            <Link to="#"><li onClick={closeNav} className="m-3">BLOG</li></Link>
                         </div>
 
                         <button className="openbtn" onClick={openNav}>&#9776; Menu</button>

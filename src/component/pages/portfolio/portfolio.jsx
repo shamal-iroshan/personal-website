@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {Helmet} from "react-helmet";
 
 // import Custom Components
 import PageHeader from "../../common/page-header/page-header";
@@ -20,6 +21,10 @@ export default function Portfolio() {
 
     return (
         <>
+            <Helmet>
+                <title>Portfolio | Shamal iroshan</title>
+            </Helmet>
+
             <div className="mb-3"/>
             <PageHeader title="Portfolio"/>
             <BreadCrumb path={['Portfolio']}/>

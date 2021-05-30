@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 //import custom components
 import './style.css';
@@ -9,6 +10,9 @@ import MainFilteredIcon from "../../Icons/MainFilteredIcon";
 function About() {
     return (
         <>
+            <Helmet>
+                <title>About | Shamal iroshan</title>
+            </Helmet>
 
             <div className="mb-3"/>
             <PageHeader title="About Me"/>
@@ -31,6 +35,7 @@ function About() {
                                         find more details
                                         about me, links are below for that.
                                     </p>
+                                    {/* eslint-disable-next-line no-undef */}
                                     <a href={`${process.env.PUBLIC_URL}/assets/documents/shamal-iroshan.pdf`} className="about-downloadcv">
                                         <span>DOWNLOAD CV</span>
                                     </a>
