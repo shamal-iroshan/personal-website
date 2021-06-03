@@ -34,7 +34,7 @@ function Header() {
                                 <Link to={`/pages/about`}><li className="m-3">ABOUT</li></Link>
                                 <Link to={`/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
                                 <Link to={`/pages/contact`}><li className="m-3">CONTACT</li></Link>
-                                <Link to="#"><li className="m-3">BLOG</li></Link>
+                                <Link to={`/blog/`}><li className="m-3">BLOG</li></Link>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ function Header() {
                             <Link to={`/pages/about`}><li onClick={closeNav} className="m-3">ABOUT</li></Link>
                             <Link to={`/pages/portfolio`}><li onClick={closeNav} className="m-3">PORTFOLIO</li></Link>
                             <Link to={`/pages/contact`}><li onClick={closeNav} className="m-3">CONTACT</li></Link>
-                            <Link to="#"><li onClick={closeNav} className="m-3">BLOG</li></Link>
+                            <Link to={`/blog/`}><li onClick={closeNav} className="m-3">BLOG</li></Link>
                         </div>
 
                         <button className="openbtn" onClick={openNav}>&#9776; Menu</button>
