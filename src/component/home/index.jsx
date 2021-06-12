@@ -49,16 +49,16 @@ function Home() {
 
                                 <div className="home-social-icons">
                                     <a href="https://www.linkedin.com/in/shamal-iroshan-023485156/">
-                                        <i className="fab fa-linkedin-in"></i>
+                                        <i className="fab fa-linkedin-in"/>
                                     </a>
                                     <a href="https://www.instagram.com/shamal_iroshan/">
-                                        <i className="fab fa-instagram"></i>
+                                        <i className="fab fa-instagram"/>
                                     </a>
                                     <a href="https://github.com/shamal34">
-                                        <i className="fab fa-github"></i>
+                                        <i className="fab fa-github"/>
                                     </a>
                                     <a href="https://stackoverflow.com/users/12289913/shamal-iroshan">
-                                        <i className="fab fa-stack-overflow"></i>
+                                        <i className="fab fa-stack-overflow"/>
                                     </a>
                                 </div>
                             </div>

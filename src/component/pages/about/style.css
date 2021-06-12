@@ -57,6 +57,13 @@
     background-position: right center;
     color: #fff;
 }
+
+.about-links {
+    color: #1345e6;
+}
+.about-links:hover {
+    text-decoration: underline;
+}
 /*------------------------------------------------*/
 
 .blob {

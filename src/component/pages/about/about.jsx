@@ -6,6 +6,7 @@ import './style.css';
 import PageHeader from "../../common/page-header/page-header";
 import BreadCrumb from "../../common/bread-crumb/bread-crumb";
 import MainFilteredIcon from "../../Icons/MainFilteredIcon";
+import {Link} from "react-router-dom";
 
 function About() {
     return (
@@ -33,7 +34,7 @@ function About() {
                                         Engineer at Fcode Labs PVT LTD . I’m here to
                                         help you with your any kind of IT related problem. If you need to contact me or
                                         find more details
-                                        about me, links are below for that.
+                                        about me, links are <Link to={`/pages/contact`}><span className="about-links">here.</span></Link>
                                     </p>
                                     {/* eslint-disable-next-line no-undef */}
                                     <a href={`${process.env.PUBLIC_URL}/assets/documents/shamal-iroshan.pdf`} className="about-downloadcv">
