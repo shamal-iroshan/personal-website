@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,10 +9,15 @@ import './style.css';
 import BreadCrumb from "../../common/bread-crumb/bread-crumb";
 import PageHeader from "../../common/page-header/page-header";
 import {sendMessage} from "../../../api";
+import InlineLoader from "../../features/common/inline-loader";
 
 function Contact() {
+
+    const [isLoading, setIsLoading] = useState(false);
+
     const formSubmit = (event) => {
         event.preventDefault();
+        setIsLoading(true);
 
         let name = event.target.elements.name.value;
         let email = event.target.elements.email.value;
@@ -43,7 +48,10 @@ function Contact() {
                 event.target.elements.phone.value = '';
                 event.target.elements.subject.value = '';
                 event.target.elements.message.value = '';
+
+                setIsLoading(false);
             } else {
+                setIsLoading(false);
                 toast.error('Something went wrong...', {
                     position: "top-right",
                     autoClose: 3000,
@@ -55,6 +63,10 @@ function Contact() {
                 });
             }
         })
+          .catch(error => {
+              console.error('AXIOS_ERROR', error);
+              setIsLoading(false);
+          })
     }
 
     return (
@@ -107,7 +119,14 @@ function Contact() {
                         </div>
                         <div className="col-lg-6">
                             <h2 className="contact-title mb-3">Got Any Questions?</h2>
-                            <p className="contact-p mb-5">Use the form below to get in touch with me</p>
+                            <p className="contact-p">Use the form below to get in touch with me</p>
+
+                            {
+                                isLoading ?
+                                  <InlineLoader loadingText="Sending message..."/>
+                                  :
+                                  ""
+                            }
 
                             <form action="#" onSubmit={formSubmit} className="contact-form mb-3">
                                 <div className="row">
