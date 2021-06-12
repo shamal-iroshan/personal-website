@@ -51,7 +51,7 @@ function Footer() {
                                     <li><Link to={`/pages/about`}>about</Link></li>
                                     <li><Link to={`/pages/portfolio`}>portfolio</Link></li>
                                     <li><Link to={`/pages/contact`}>contact</Link></li>
-                                    <li><Link to={`/blog/`}>blog</Link></li>
+                                    <li><Link to={`#`}>blog</Link></li>
                                 </ul>
                             </div>
                         </div>

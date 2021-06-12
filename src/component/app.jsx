@@ -10,7 +10,7 @@ function App( props ) {
 
     useLayoutEffect(()=> {
         if ( overlayFlag ) {
-            document.getElementById('loader').classList.add('loaded')
+            document.getElementById('loader').classList.add('loaded');
         }
     })
 

@@ -1,8 +1,5 @@
 import React from 'react';
 
-//import custom components
-import './style.css';
-
 function Loader() {
     return (
         <>
