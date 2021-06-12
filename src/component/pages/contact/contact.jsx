@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Helmet} from "react-helmet";
@@ -95,11 +94,11 @@ function Contact() {
                                             </li>
                                             <li>
                                                 <i className="fas fa-phone"/>
-                                                <Link to="tel:#">+94 75 2736 788</Link>
+                                                +94 75 2736 788
                                             </li>
                                             <li>
                                                 <i className="fas fa-envelope"/>
-                                                <Link to="mailto:#">hello@shamaliroshan.com</Link>
+                                                hello@shamaliroshan.com
                                             </li>
                                         </ul>
                                     </div>
@@ -130,7 +129,7 @@ function Contact() {
 
                             <form action="#" onSubmit={formSubmit} className="contact-form mb-3">
                                 <div className="row">
-                                    <div className="col-sm-6 top-col">
+                                    <div className="col-sm-6">
                                         <label htmlFor="cname" className="sr-only">Name</label>
                                         <input type="text" className="form-control" name="name" id="cname" placeholder="Name *" required />
                                     </div>
@@ -142,7 +141,7 @@ function Contact() {
                                 </div>
 
                                 <div className="row">
-                                    <div className="col-sm-6 top-col">
+                                    <div className="col-sm-6">
                                         <label htmlFor="cphone" className="sr-only">Phone</label>
                                         <input type="tel" className="form-control" name="phone" id="cphone" placeholder="Phone" />
                                     </div>
