@@ -36,9 +36,9 @@ function Footer() {
                                     <p className="copyright-text">
                                         Copyright &copy;
                                         {
-                                            new Date().getFullYear()
+                                            ' ' + new Date().getFullYear()+ ' '
                                         }
-                                        All rights reserved | This website is made with <i className="far fa-heart"/> by
+                                         All rights reserved | This website is made with <i className="far fa-heart"/> by
                                         Shamal
                                     </p>
                                 </div>
@@ -51,7 +51,7 @@ function Footer() {
                                     <li><Link to={`/pages/about`}>about</Link></li>
                                     <li><Link to={`/pages/portfolio`}>portfolio</Link></li>
                                     <li><Link to={`/pages/contact`}>contact</Link></li>
-                                    <li><Link to={`#`}>blog</Link></li>
+                                    <li><a href="https://blog.shamaliroshan.com/">blog</a></li>
                                 </ul>
                             </div>
                         </div>

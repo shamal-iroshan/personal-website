@@ -26,6 +26,7 @@ function Header() {
                 <nav>
                     <div id="main-menu" className="d-flex justify-content-center mt-2">
                         <div className="m-3 mr-10">
+                            {/* eslint-disable-next-line no-undef */}
                             <Link to={`/`}><img src={`${process.env.PUBLIC_URL}/assets/img/home/logowithicon.png`} alt="logo"/></Link>
                         </div>
 
@@ -34,7 +35,7 @@ function Header() {
                                 <Link to={`/pages/about`}><li className="m-3">ABOUT</li></Link>
                                 <Link to={`/pages/portfolio`}><li className="m-3">PORTFOLIO</li></Link>
                                 <Link to={`/pages/contact`}><li className="m-3">CONTACT</li></Link>
-                                <Link to={`#`}><li className="m-3">BLOG</li></Link>
+                                <a href="https://blog.shamaliroshan.com/"><li className="m-3">BLOG</li></a>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +47,7 @@ function Header() {
                             <Link to={`/pages/about`}><li onClick={closeNav} className="m-3">ABOUT</li></Link>
                             <Link to={`/pages/portfolio`}><li onClick={closeNav} className="m-3">PORTFOLIO</li></Link>
                             <Link to={`/pages/contact`}><li onClick={closeNav} className="m-3">CONTACT</li></Link>
-                            <Link to={`#`}><li onClick={closeNav} className="m-3">BLOG</li></Link>
+                            <a href="https://blog.shamaliroshan.com/"><li onClick={closeNav} className="m-3">BLOG</li></a>
                         </div>
 
                         <button className="openbtn" onClick={openNav}>&#9776; Menu</button>
