@@ -1,16 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Work(props) {
   const {data} = props;
+  const [loading, setLoading] = useState(true);
 
   return (
     <>
       <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 port">
-        {/*{loading ?*/}
-        {/*  <div className="work-skeleton"/> : ""*/}
-        {/*}*/}
+        {loading ?
+          <div className="work-skeleton"/> : ""
+        }
         <img
           className="work-image"
+          onLoad={() => {
+              setLoading(false);
+          }}
           src={data.image}
           alt=""/>
         {
