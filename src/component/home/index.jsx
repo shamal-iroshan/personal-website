@@ -1,11 +1,14 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import ReactGA from 'react-ga';
 
 //import custom components
 import MainIcon from "../Icons/MainIcon";
 import './style.css';
 
 function Home() {
+    ReactGA.pageview(window.location.pathname);
+
     return (
         <>
             <Helmet>

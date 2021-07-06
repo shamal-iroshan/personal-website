@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import ReactGA from "react-ga";
 
 //import custom components
 import './style.css';
@@ -9,6 +10,8 @@ import MainFilteredIcon from "../../Icons/MainFilteredIcon";
 import {Link} from "react-router-dom";
 
 function About() {
+    ReactGA.pageview(window.location.pathname);
+
     return (
         <>
             <Helmet>

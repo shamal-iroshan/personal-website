@@ -1,11 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
+import ReactGA from "react-ga";
 
 //import custom component
 import './style.css';
 
 function NotFound() {
+    ReactGA.pageview(window.location.pathname);
+
     return(
         <>
             <Helmet>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {Helmet} from "react-helmet";
+import ReactGA from "react-ga";
 
 //import custom components
 import './style.css';
@@ -11,6 +12,7 @@ import {sendMessage} from "../../../api";
 import InlineLoader from "../../features/common/inline-loader";
 
 function Contact() {
+    ReactGA.pageview(window.location.pathname);
 
     const [isLoading, setIsLoading] = useState(false);
 

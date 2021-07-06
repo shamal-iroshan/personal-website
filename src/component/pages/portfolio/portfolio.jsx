@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Helmet} from "react-helmet";
+import ReactGA from "react-ga";
 
 // import Custom Components
 import PageHeader from "../../common/page-header/page-header";
@@ -12,6 +13,8 @@ import './style.css';
 export default function Portfolio() {
   const [works, setWorks] = useState(null);
   const [loading, setLoading] = useState(true);
+
+    ReactGA.pageview(window.location.pathname);
 
   useEffect(() => {
     getWorks().then(result => {

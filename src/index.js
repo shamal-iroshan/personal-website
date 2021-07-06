@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import {toast} from "react-toastify";
-import {updateVisitCount} from "./api";
+import ReactGA from "react-ga";
 
 import AppRoute from "./routes";
+import {updateVisitCount} from "./api";
 
 toast.configure();
+
+const TRACKING_ID = "UA-175813532-1";
+ReactGA.initialize(TRACKING_ID);
 
 try{
     updateVisitCount()
