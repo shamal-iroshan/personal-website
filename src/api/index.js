@@ -53,9 +53,11 @@ async function sendEmail(data) {
 export async function updateVisitCount() {
     let cookieValue = getCookie('viewed');
     if (cookieValue) {
-        console.log('inside')
+        return axios.put(`${baseUrl}views/updateViewCount`,{"website": "shamaliroshan.com"})
+            .catch(function (error) {
+                console.log(error);
+            });
     } else {
-        console.log('outside')
         setCookie('viewed', true, 1);
     }
     return cookieValue;
