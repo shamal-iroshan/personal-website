@@ -23,7 +23,7 @@ export async function getWorks() {
 export async function sendMessage(data) {
     return axios.post(`${baseUrl}message/saveMessage`,data)
         .then(function (response) {
-            // sendEmail(data);
+            sendEmail(data);
             return response.data;
         })
         .catch(function (error) {
@@ -33,15 +33,16 @@ export async function sendMessage(data) {
 }
 
 //send email
-// eslint-disable-next-line no-unused-vars
 async function sendEmail(data) {
-  return axios.post(`https://shamaliroshan.com/mail_server/sendMail.php`,{
-    to : "hello@shamaliroshan.com",
+  return axios.post(`https://api.shamaliroshan.com/email/send-email.php`,{
+    to : "web@shamaliroshan.com",
     name: data.name,
     from: data.email,
     phone: data.phone,
     subject: data.subject,
-    message: data.message
+    message: data.message,
+    logo: "https://shamaliroshan.com/assets/img/home/logowithicon.png",
+    link: "https://shamaliroshan.com/"
   })
     .catch(function (error) {
       // handle error
