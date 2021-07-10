@@ -3,7 +3,7 @@ import axios from 'axios';
 import {getCookie, setCookie} from "../utils/cookies";
 
 const localServer = false;
-const WEB_SERVER = 'https://shamaliroshan.com/api/';
+const WEB_SERVER = 'https://api.shamaliroshan.com/api/';
 const LOCAL_SERVER = 'http://localhost:8080/api/v1/';
 const baseUrl = localServer ? LOCAL_SERVER : WEB_SERVER;
 
