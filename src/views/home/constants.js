@@ -1,0 +1,2 @@
+export const GET_CONFIG = "HOME/GET_CONFIG";
+export const SAVE_CONFIG = "HOME/SAVE_CONFIG";

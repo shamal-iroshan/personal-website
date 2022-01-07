@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Layout from "../component/app";
-import Home from "../component/home";
+import Home from "../views/home/home";
 
 export default function HomeRoute() {
     return (

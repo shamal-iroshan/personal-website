@@ -60,25 +60,13 @@
     text-align: center;
 }
 
-.top {
-    animation: rotate 15s infinite linear;
+.top-static {
+    animation: rotate 120s infinite linear;
+}
+.bottom-static {
+    transform: translate(100px, 100px) rotate(100deg);
 }
 
-.middle {
-    animation: rotate 18s infinite reverse linear;
-}
-
-.bottom {
-    animation: rotate 20s infinite linear;
-}
-
-.blobs {
-    transition: transform 5s;
-}
-
-.blobs:hover {
-    transform: translate(100px, 100px) scale(0.0);
-}
 
 @keyframes rotate {
     0% {
@@ -87,6 +75,13 @@
     100% {
         transform: translate(100px, 100px) rotate(359deg);
     }
+}
+.blobs {
+    transition: transform 5s;
+}
+
+.blobs:hover {
+    transform: translate(100px, 100px) scale(0.0);
 }
 
 /*responsive*/
