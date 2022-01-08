@@ -4,12 +4,12 @@ svg {
 }
 
 .wave {
-    animation: wave 10s linear;
+    animation: wave 60s linear;
     animation-iteration-count:infinite;
     fill: #e344bb;
 }
 .wave2 {
-    animation: wave 10s linear;
+    animation: wave 60s linear;
     animation-iteration-count:infinite;
     fill: #1856d2;
 }

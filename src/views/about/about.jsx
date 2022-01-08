@@ -1,16 +1,17 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
 import ReactGA from "react-ga";
+import {useSelector} from "react-redux";
 
 //import custom components
 import './style.css';
-import PageHeader from "../../common/page-header/page-header";
-import BreadCrumb from "../../common/bread-crumb/bread-crumb";
-import MainFilteredIcon from "../../Icons/MainFilteredIcon";
-import {Link} from "react-router-dom";
+import PageHeader from "../../component/common/page-header/page-header";
+import BreadCrumb from "../../component/common/bread-crumb/bread-crumb";
+import MainIcon from "../../component/Icons/MainIcon";
 
 function About() {
     ReactGA.pageview(window.location.pathname);
+    const config = useSelector(state => state.homeReducer.config);
 
     return (
         <>
@@ -31,16 +32,10 @@ function About() {
                             <div className="m-auto">
                                 <div className="home-content-area">
                                     <p className="about-text-header">ABOUT ME</p>
-                                    <h2 className="about-text-sub-header">front end and back end developer</h2>
-                                    <p className="about-text-content">I am shamal iroshan, i live in Colombo Sri Lanka.
-                                        I’m undergraduate student of IJSE and I'm currently working as a Software
-                                        Engineer at Fcode Labs PVT LTD . I’m here to
-                                        help you with your any kind of IT related problem. If you need to contact me or
-                                        find more details
-                                        about me, links are <Link to={`/pages/contact`}><span className="about-links">here.</span></Link>
-                                    </p>
+                                    <h2 className="about-text-sub-header">{config?.attributes?.aboutTitle}</h2>
+                                    <p className="about-text-content">{config?.attributes?.aboutDescription}</p>
                                     {/* eslint-disable-next-line no-undef */}
-                                    <a href={`${process.env.PUBLIC_URL}/assets/documents/shamal-iroshan.pdf`} className="about-downloadcv">
+                                    <a href={config?.attributes?.cvUrl} className="about-downloadcv">
                                         <span>DOWNLOAD CV</span>
                                     </a>
                                 </div>
@@ -52,7 +47,6 @@ function About() {
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div className="d-flex justify-content-center align-items-center">
                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="100" cy="100" fill="#939CE2" r="80"/>
                                 <g>
                                     <svg className="blobs">
                                         <path
@@ -61,7 +55,7 @@ function About() {
                                             className="middle"
                                         />
                                     </svg>
-                                    <MainFilteredIcon/>
+                                    <MainIcon/>
                                 </g>
                             </svg>
                         </div>

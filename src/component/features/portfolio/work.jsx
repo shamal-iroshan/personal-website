@@ -15,23 +15,23 @@ function Work(props) {
           onLoad={() => {
               setLoading(false);
           }}
-          src={data.image}
+          src={data?.attributes?.image}
           alt=""/>
         {
-          data.link && data.link !== '#' ?
-            <a href={data.link} rel="noreferrer" target="_blank">
+          data?.attributes?.link && data?.attributes?.link !== '#' ?
+            <a href={data?.attributes?.link} rel="noreferrer" target="_blank">
               <div className="overlay"/>
               <div className="short-desc">
-                <h4>{data.title}</h4>
-                <p>{data.description}</p>
+                <h4>{data?.attributes?.title}</h4>
+                <p>{data?.attributes?.description}</p>
               </div>
             </a>
             :
             <>
               <div className="overlay"/>
               <div className="short-desc">
-                <h4>{data.title}</h4>
-                <p>{data.description}</p>
+                <h4>{data?.attributes?.title}</h4>
+                <p>{data?.attributes?.description}</p>
               </div>
             </>
         }

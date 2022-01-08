@@ -2,7 +2,7 @@ import axios from "../../api/axios";
 import {call, put, takeLatest} from "redux-saga/effects";
 import {saveConfig} from "./actions";
 import {GET_CONFIG} from "./constants";
-import {setLoading} from "../../util/loading";
+import {setLoading} from "../../utils/loading";
 
 const getConfigAsync = () => {
   return axios.get("configs/1").then(response => response.data)

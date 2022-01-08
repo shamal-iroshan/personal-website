@@ -1,32 +1,25 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Helmet} from "react-helmet";
 import ReactGA from "react-ga";
+import {useDispatch} from "react-redux";
+import {useSelector} from "react-redux";
 
 // import Custom Components
-import PageHeader from "../../common/page-header/page-header";
-import BreadCrumb from "../../common/bread-crumb/bread-crumb";
-import Work from "../../features/portfolio/work";
-import {getWorks} from "../../../api";
-import InlineLoader from "../../features/common/inline-loader";
+import PageHeader from "../../component/common/page-header/page-header";
+import BreadCrumb from "../../component/common/bread-crumb/bread-crumb";
+import Work from "../../component/features/portfolio/work";
+import InlineLoader from "../../component/features/common/inline-loader";
 import './style.css';
+import {getWorks} from "./actions";
 
 export default function Portfolio() {
-  const [works, setWorks] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+  const {works, loading} = useSelector(state => state.worksReducer);
 
     ReactGA.pageview(window.location.pathname);
 
   useEffect(() => {
-    getWorks().then(result => {
-      setLoading(false);
-      if (result && result.success) {
-        setWorks(result.data);
-      }
-    })
-      .catch(error => {
-        console.error("AXIOS_ERROR", error);
-        setLoading(false);
-      })
+    dispatch(getWorks());
   }, [])
 
   return (
