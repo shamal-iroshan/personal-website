@@ -11,6 +11,8 @@ import Work from "../../component/features/portfolio/work";
 import InlineLoader from "../../component/features/common/inline-loader";
 import './style.css';
 import {getWorks} from "./actions";
+import Header from "../../component/common/header/header";
+import Footer from "../../component/common/footer/footer";
 
 export default function Portfolio() {
   const dispatch = useDispatch();
@@ -33,6 +35,8 @@ export default function Portfolio() {
       <Helmet>
         <title>Portfolio | Shamal iroshan</title>
       </Helmet>
+
+      <Header/>
 
       <div className="mb-3"/>
       <PageHeader title="Portfolio"/>
@@ -60,6 +64,8 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="mb-5"/>
+
+      <Footer/>
     </>
   )
 }

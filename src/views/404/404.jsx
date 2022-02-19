@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet";
 import ReactGA from "react-ga";
+import backgroundImage from './img/background.jpg';
 
 //import custom component
 import './style.css';
@@ -14,7 +15,7 @@ function NotFound() {
             <Helmet>
                 <title>404-Not Found | Shamal iroshan</title>
             </Helmet>
-            <div style={{width: '100%', height: '100vh', backgroundColor: '#3498db'}}>
+            <div style={{width: '100%', height: '100vh', background:  `url(${backgroundImage})`}}>
                 <div className="mainbox">
                     <div className="number-container">
                         <div className="err">4</div>

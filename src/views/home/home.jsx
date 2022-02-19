@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 //import custom components
 import MainIcon from "../../component/Icons/MainIcon";
 import './style.css';
+import Header from "../../component/common/header/header";
 
 function Home() {
   ReactGA.pageview(window.location.pathname);
@@ -16,6 +17,7 @@ function Home() {
       <Helmet>
         <title>Home | Shamal iroshan</title>
       </Helmet>
+      <Header/>
       <div className="container">
         <div className="row mt-4">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">

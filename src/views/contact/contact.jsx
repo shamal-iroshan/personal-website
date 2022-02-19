@@ -11,6 +11,8 @@ import BreadCrumb from "../../component/common/bread-crumb/bread-crumb";
 import PageHeader from "../../component/common/page-header/page-header";
 import InlineLoader from "../../component/features/common/inline-loader";
 import {sendMessage} from "./actions";
+import Header from "../../component/common/header/header";
+import Footer from "../../component/common/footer/footer";
 
 function Contact() {
   ReactGA.pageview(window.location.pathname);
@@ -49,6 +51,8 @@ function Contact() {
       <Helmet>
         <title>Contact Me | Shamal iroshan</title>
       </Helmet>
+
+      <Header/>
 
       <div className="mb-3"/>
       <PageHeader title="Contact Me"/>
@@ -146,6 +150,8 @@ function Contact() {
           <div className="mt-4 mb-3"/>
         </div>
       </div>
+
+      <Footer/>
     </>
   )
 }
