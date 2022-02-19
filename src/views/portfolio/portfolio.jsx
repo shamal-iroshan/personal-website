@@ -16,11 +16,17 @@ export default function Portfolio() {
   const dispatch = useDispatch();
   const {works, loading} = useSelector(state => state.worksReducer);
 
-    ReactGA.pageview(window.location.pathname);
+  ReactGA.pageview(window.location.pathname);
 
   useEffect(() => {
     dispatch(getWorks());
   }, [])
+
+  useEffect(() => {
+    works?.sort((item1, item2) => {
+      return item1?.attributes?.order - item2?.attributes?.order
+    })
+  }, [works])
 
   return (
     <>
