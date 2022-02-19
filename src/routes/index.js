@@ -12,7 +12,7 @@ const UnderConstruction = React.lazy(() => import('../views/commingSoon/CommingS
 export default function AppRoute() {
   const dispatch = useDispatch();
   const config = useSelector(state => state.homeReducer.config);
-  const underMaintenance = config?.attributes?.underMaintainence;
+  const underMaintainence = config?.attributes?.underMaintainence;
 
   useEffect(() => {
     dispatch(getConfig())
@@ -20,17 +20,17 @@ export default function AppRoute() {
 
   return (
     <React.Suspense fallback={<Loader/>}>
-      <Switch>
-        {
-          underMaintenance ?
+      {
+        underMaintainence ?
+          <Switch>
             <Route path={'/'} component={UnderConstruction}/>
-            :
-            <>
-              <Route path={`/pages`} component={OtherPages}/>
-              <Route path={`/`} component={HomePage}/>
-            </>
-        }
-      </Switch>
+          </Switch>
+          :
+          <Switch>
+            <Route path={`/pages`} component={OtherPages}/>
+            <Route path={`/`} component={HomePage}/>
+          </Switch>
+      }
     </React.Suspense>
   )
 }
